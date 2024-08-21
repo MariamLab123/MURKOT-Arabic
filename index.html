@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURKOT</title>
+<style>
+    *{
+        border:0;
+        margin:0;
+        text-decoration:none;
+        font-family:sans-serif;
+    }
+    body{
+        background-color:azure;
+    }
+    .lab{
+        background-color:burlywood;
+        width:100%;
+        height:auto;
+    }
+    .con{
+        position:fixed;
+        width:100%;
+        height:auto;
+    }
+    .nav{
+        width:90%;
+        height:auto;
+        padding:10px;
+        background-color:cadetblue;
+        border-radius:20px;
+    }
+    .fk{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(16, 3, 46);
+    }
+    .btn{
+        background-color:chocolate;
+        font-size:20px;
+        border-radius:10px;
+        animation-name:moda;
+        animation-duration:3s;
+    }
+    @keyframes moda{
+        from{}
+        to{background-color:rgb(5, 2, 49);color:white;font-size:30px;border-radius:30px;}
+    }
+    .fk{
+        font-family:monospace;
+    }
+    .fu{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .blend{
+        font-size:30px;
+    }
+    .dot{
+        background-color:burlywood;
+        width:85%;
+        height:auto;
+        padding:10px;
+        border-radius:20px;
+        margin:10px;
+    }
+    .q{
+        background-color:cadetblue;
+        width:80%;
+        height:auto;
+        padding:5px;
+        border-radius:15px;
+    }
+    .y{
+        display:none;
+    }
+    .n{
+        display:none;
+    }
+    .y2{
+        display:none;
+    }
+    .n2{
+        display:none;
+    }
+    .y3{
+        display:none;
+    }
+    .n3{
+        display:none;
+    }
+    .let{
+        background-color:burlywood;
+        width:100%;
+        height:auto;
+        position:fixed;
+    }
+    .q1{
+        display:none;
+    }
+    .q2{
+        display:none;
+    }
+    .q3{
+        display:none;
+    }
+    .red{
+        background-color:cadetblue;
+        padding:10px;
+        margin:10px;
+        border-radius:15px;
+        width:80%;
+        height:30px;
+    }
+    .red1{
+        background-color:cadetblue;
+        padding:10px;
+        margin:10px;
+        border-radius:15px;
+        width:80%;
+        height:30px;
+    }
+    .yy , .nn{
+        display:none;
+    }
+    .yyy , .nnn{
+        display:none;
+    }
+    .yyyy , .nnnn{
+        display:none;
+    }
+    .red2{
+        background-color:cadetblue;
+        padding:10px;
+        margin:10px;
+        border-radius:15px;
+        width:80%;
+        height:30px;
+    }
+    .game1{
+        display:none;
+    }
+    .y4{
+        display:none;
+    }
+    .n4{
+        display:none;
+    }
+    .q4{
+        display:none;
+    }
+</style>
+</head>
+<body>
+    <div class="all">
+    <center>
+    <div class="con"><div class="lab"><font color="darkblue" size="50px"><b>ماركوت</b></font></div></div>
+    <h1>fffff</h1>
+    <h1>m</h1>
+    <div class="nav">
+    <center>
+        <h2 class="fk">الطعام و المطبخ</h2>
+        <h1 style="height:10px;"></h1>
+        <p class="p">اسئلة عن الطعام و الطبخ و اشياء تتعلق بالمطبخ</p>
+        <h1 style="height:10px;"></h1>
+        <h1 style="height:10px;"></h1>
+        <button class="btn" onclick="q1()">ابدء</button>
+    </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+        <h2 class="fg">العاب الفيديو</h2> 
+        <h1 style="height:10px;"></h1>
+        <p class="p">اسئلة عن العاب الفيديو و الكومبيوتر</p>
+        <h1 style="height:10px;"></h1>
+        <h1 style="height:10px;"></h1>
+        <button class="btn" onclick="q2()">ابدء</button>
+      </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+            <h2 class="fu">البحار و المحيطات</h2>
+            <h1 style="height:10px;"></h1>
+            <p class="p">اسئلة عن اعماق البحار و المحيطات</p>
+            <h1 style="height:10px;"></h1>
+            <h1 style="height:10px;"></h1>
+            <button class="btn" onclick="q3()">ابدء</button>
+        </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+            <h2 class="fu">صعبة و غريبة</h2>
+            <h1 style="height:10px;"></h1>
+            <p class="p">اسئلة عن اشياء صعبة و غريبة</p>
+            <h1 style="height:10px;"></h1>
+            <h1 style="height:10px;"></h1>
+            <button class="btn" onclick="q4()">ابدء</button>
+        </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+            <h2 class="fu">الفضاء الواسع</h2>
+            <h1 style="height:10px;"></h1>
+            <p class="p">اسئلة عن الكواكب و النجوم و الفضاء</p>
+            <h1 style="height:10px;"></h1>
+            <h1 style="height:10px;"></h1>
+            <button class="btn" onclick="q5()">ابدء</button>
+        </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <font color="blue" class="blend">انتظر التحديث القادم للمزيد...</font>
+    </center>
+    </div>
+    <center>
+    <div class="q1">
+      <center>
+        <div class="let">
+            <font class="y" color="green" size="10px">الإجابة الصحيحة</font>
+            <font class="n" color="red" size="10px">إجابة سيئة</font>
+        </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>ما هو الطعام المصري أدناه؟</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">همبرجر</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">بسيلة</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes()">كشري</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">بطاطس</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>ما هو السائل الأكثر استخداما في الطبخ؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">ماء</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">لبن</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">التوابل</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">زيت الطهي</button>
+            <h1 style="height:10px;"></h1>
+        </div>
+      </center>
+      <center>
+        <div class="dot">
+            <h2>ما هو القرنبيط؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">الخضروات</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">الفواكه</button>
+        </div>
+      </center>
+      <center>
+        <div class="dot">
+            <h2>ما هي نسبة ما يجعل الشاي صالح للشرب؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">1-2% درجة</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">2-3% درجة</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">3-4% درجة</button>
+        </div>
+      </center>
+      <h1 style="height:10px;"></h1>
+    <h1 style="height:10px;"></h1>
+    <h1 style="height:10px;"></h1>
+    <button class="btn" onclick="q1o()">خروج</button>
+    </div>
+    
+    </center>
+    <center>
+        <div class="q2">
+            <div class="let">
+                <font class="y2" color="green" size="10px">الاجابة الصحيحة</font>
+                <font class="n2" color="red" size="10px">اجابة سيئة</font>
+            </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>ما هي لعبة سبايدر مان الأولى؟</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes2()">سبايدر مان: لعبة الفيديو</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">سبايدر مان ون 1</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">رجل العنكبوت</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">سبايدر مان 2</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>ما هي لعبة الكمبيوتر الأكثر شهرة في العالم؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">روبلوكس</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">امونج اس</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes2()">ماين كرافت</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">Level Devil</button>
+            <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>من هو الشخص الأكثر شهرة الذي ابتكر لعبة؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">مارك جان</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">Shigeru Miyamoto</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">ليو مارتنز</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">دوبال بورك</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>من هو اليوتيوبر الأشهر الذي لديه محتوى ألعاب؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Gaming X</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">GameLoop</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Block Atom</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">PewDiePie</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>ما هي اللعبة الأكثر شعبية في مصر في عام 2020؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">Among Us</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Level Devil</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Roblox</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Super Mario</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <button class="btn" onclick="q2o()">خروج</button>
+        </div>
+        <div class="q3">
+            <div class="let">
+                <font class="y3" color="green" size="10px">الاجابة الصحيحة</font>
+                <font class="n3" color="red" size="10px">اجابة سيئة</font>
+            </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>ما هو أكبر مخلوق في المحيط؟</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes3()">الحوت الأزرق</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">الحوت الزعنفي</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">قرش الحوت</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">حوت العنبر</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>ما هو السلمندر؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">سمكة</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes3()">برمائي</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">حوت</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">الحيوانات المنوية</button>
+            <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>ما هو الفرق بين البحر والمحيط؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">البحار محاطة جزئيا بالأرض</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">البحار أصغر من المحيطات</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">تغطي البحار 71% من سطح الأرض</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">البحار هي مسطحات مفتوحة من المياه المالحة</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>هل هناك أسماك لا تؤكل؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">لا</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">نعم</button>
+            </div>
+            <div class="dot">
+                <h2>ما هي الكائنات الحية التي تعيش على الشواطئ؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">الحبار العملاق</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">الشعاب المرجانية</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">السلطعون</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">أسماك أعماق البحار</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <button class="btn" onclick="q3o()">خروج</button>
+        </div>
+        <div class="game1">
+            <center>
+                  <h2 style="margin:10px;">معنى كلمة كرة كبيرة وصغيرة وحنونة ولطيفة؟</h2>
+                  <input class="red" placeholder="Enter" type="text">
+                  <font class="yy" color="green" size="5px">نعم</font>
+                  <font class="nn" color="green" size="5px">لا</font>
+
+
+                  <h1 style="height:30px;"></h1>
+
+
+                  <h2 style="margin:10px;">هل الصواب صواب أم الخطأ صواب بالنسبة للمجرم؟</h2>
+                  <input class="red1" placeholder="Enter" type="text">
+                  <font class="yyy" color="green" size="5px">نعم</font>
+                  <font class="nnn" color="green" size="5px">لا</font>
+
+                  <h1 style="height:30px;"></h1>
+
+                  <h2 style="margin:10px;">ما هي السيارة؟ (آلة تمكن الناس من التحرك. أو شيء نستخدمه للتحرك)</h2>
+                  <input class="red2" placeholder="Enter" type="text">
+                  <font class="yyyy" color="green" size="5px">نعم</font>
+                  <font class="nnnn" color="green" size="5px">لا</font>
+                  <h1 style="height:10px;"></h1>
+                  <button class="btn" onclick="q4o()">خروج</button>
+            </center>
+        </div>
+        <div class="q4">
+            <div class="let">
+                <font class="y4" color="green" size="10px">الاجابة الصحيحة</font>
+                <font class="n4" color="red" size="10px">اجابة سيئة</font>
+            </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>أية مجرة ​​ستصطدم بمجرتنا؟</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no4()">M33</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no4()">Messier 83</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes4()">Andromeda</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no4()">NGC 3370</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>كم عدد الكواكب الموجودة في المجموعة الشمسية؟</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes4()">ثمانية</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no4()">ثلاثة</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no4()">خمسة</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no4()">أربعة</button>
+            <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>ما هي درجة حرارة الشمس؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">6,500 درجة</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">4,500 درجة</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">3,500 درجة</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes4()">5,500 درجة</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>هل يوجد كواكب قزمة في النظام الشمسي؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes4()">نعم</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">لا</button>
+            </div>
+            <div class="dot">
+                <h2>من هو أقرب نجم إلى المجموعة الشمسية؟</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">نجمة برنارد</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes4()">بروكسيما سنتوري</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">الذئب 359</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no4()">ألفا سنتوري أ</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <button class="btn" onclick="q5o()">خروج</button>
+        </div>
+    </center>
+    <script>
+        let all = document.getElementsByClassName("all")[0];
+        let q1b = document.getElementsByClassName("q1")[0];
+        let yesy = document.getElementsByClassName("y")[0];
+        let non = document.getElementsByClassName("n")[0];
+        let yesy2 = document.getElementsByClassName("y2")[0];
+        let non2 = document.getElementsByClassName("n2")[0];
+        let q2b = document.getElementsByClassName("q2")[0];
+        let yesy3 = document.getElementsByClassName("y3")[0];
+        let non3 = document.getElementsByClassName("n3")[0];
+        let q3b = document.getElementsByClassName("q3")[0];
+        let red = document.getElementsByClassName("red")[0];
+        let yy = document.getElementsByClassName("yy")[0];
+        let nn = document.getElementsByClassName("nn")[0];
+        let yyy = document.getElementsByClassName("yyy")[0];
+        let nnn = document.getElementsByClassName("nnn")[0];
+        let red1 = document.getElementsByClassName("red1")[0];
+        let yyyy = document.getElementsByClassName("yyyy")[0];
+        let nnnn = document.getElementsByClassName("nnnn")[0];
+        let red2 = document.getElementsByClassName("red2")[0];
+        let game1 = document.getElementsByClassName("game1")[0];
+        let q4b = document.getElementsByClassName("q4")[0];
+        let yesy4 = document.getElementsByClassName("y4")[0];
+        let non4 = document.getElementsByClassName("n4")[0];
+        function q1(){
+         all.style.display="none";
+         q1b.style.display="block";
+        }
+        function q1o(){
+            all.style.display="block";
+            q1b.style.display="none";
+        }
+        function no(){
+            yesy.style.display="none";
+            non.style.display="block";
+        }
+        function yes(){
+            yesy.style.display="block";
+            non.style.display="none";
+        }
+        function no2(){
+            yesy2.style.display="none";
+            non2.style.display="block";
+        }
+        function yes2(){
+            yesy2.style.display="block";
+            non2.style.display="none";
+        }
+        function q2(){
+            all.style.display="none";
+            q2b.style.display="block";
+        }
+        function q2o(){
+            all.style.display="block";
+            q2b.style.display="none";
+        }
+        function no3(){
+            yesy3.style.display="none";
+            non3.style.display="block";
+        }
+        function yes3(){
+            yesy3.style.display="block";
+            non3.style.display="none";
+        }
+        function q3(){
+            all.style.display="none";
+            q3b.style.display="block";
+        }
+        function q3o(){
+            all.style.display="block";
+            q3b.style.display="none";
+        }
+        red.onkeyup=function(){
+            if(red.value=="ball is big and small and affectionate and infant"){
+                yy.style.display="block";
+                nn.style.display="none";
+            }
+            else if(red.value=="ball is big and small and affectionate"){
+                yy.style.display="block";
+                nn.style.display="none";
+            }
+            else{
+                yy.style.display="none";
+                nn.style.display="block";
+            }
+        }
+        red1.onkeyup=function(){
+            if(red1.value=="الصواب صواب"){
+                yyy.style.display="block";
+                nnn.style.display="none";
+            }
+            else if(red1.value=="الخطأ صواب بالنسبة للمجرم"){
+                yyy.style.display="none";
+                nnn.style.display="block";
+            }
+            else{
+                yyy.style.display="none";
+                nnn.style.display="block";
+            }
+        }
+        red2.onkeyup=function(){
+            if(red2.value=="آلة تمكن الناس من التحرك"){
+                yyyy.style.display="block";
+                nnnn.style.display="none";
+            }
+            else if(red2.value=="شيء نستخدمه للتحرك"){
+                yyyy.style.display="none";
+                nnnn.style.display="block";
+            }
+            else{
+                yyyy.style.display="none";
+                nnnn.style.display="block";
+            }
+        }
+        function q4o(){
+            all.style.display="block";
+            game1.style.display="none";
+        }
+        function q4(){
+            all.style.display="none";
+            game1.style.display="block";
+        }
+        function yes4(){
+            yesy4.style.display="block";
+            non4.style.display="none"; 
+        }
+        function no4(){
+            yesy4.style.display="none";
+            non4.style.display="block";
+        }
+        function q5o(){
+            all.style.display="block";
+            q4b.style.display="none";
+        }
+        function q5(){
+            all.style.display="none";
+            q4b.style.display="block";
+        }
+    </script>
+</body>
+</html>
